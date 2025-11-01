@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Optional: Fixes the background image */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+    border-radius: 2em;
+    padding: 4em 3em;
+}
+
+.title {
+    font-size: 3.5em;
+}
+
+hr {
+    width: 80%;
+    background-color: white;
+    height: 3px;
+    border-radius: 1em;
+    border: none;
+}
+
+.timer {
+    font-size: 17.5em;
+    font-weight: 700;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 1em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.3em 1.3em;
+    border-radius: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* faint glass edge */
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.35); /* fits better w/ light pink */
+    backdrop-filter: blur(10px); /* stronger, softer blur */
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* lower opacity = more see-through */
+    transform: scale(1.07);
+}
+
